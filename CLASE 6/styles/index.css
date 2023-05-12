@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor {
+    border: 5px solid rgb(42, 194, 42);/*contorno y color*/
+    width:800px; /*ancho*/
+    height: 400px; /*altura*/
+    display: grid;/*mas espacio ancho y alto*/
+    grid-template-columns: repeat(4, 1fr);/*tamaño de columna*/
+    grid-template-rows: 1fr 1fr 1fr;/*tamaño de filas*/
+    grid-template-areas: 
+        "caja1 caja1 caja2 caja5"
+        "caja6 caja3 caja2 caja5"
+        "caja6 caja3 caja4 caja4";
+}
+
+.caja {
+    border: 1px solid rgb(81, 13, 251);
+}
+
+.caja1 {
+    grid-area: caja1;
+}
+
+.caja2 {
+    grid-area: caja2;
+}
+
+.caja3 {
+    grid-area: caja3;
+}
+
+.caja4 {
+    grid-area: caja4;
+}
+
+.caja5 {
+    grid-area: caja5;
+}
+
+.caja6 {
+    grid-area: caja6;
+}
+

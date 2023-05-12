@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;300;400;600;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+::selection {
+    background-color: black;
+    color: #e96acd;
+}
+
+header {
+    background-color: #e96acd;
+    display: flex;
+    gap: 20px;
+    grid-gap: 20px;
+}
+
+.logo {
+    width: 100px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+    grid-gap: 10px;
+}
+
+.menu__item a {
+    background: white;
+    border: 5px solid white;
+    color: #e96acd;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+
+/******************* PSEUDOCLASES *******************/
+.menu__item:nth-child(2) a {
+    background: #a13389;
+    border: 5px solid #a13389;
+    color: white;
+}
+
+.menu__item:first-child a {
+    background: black;
+}
+
+.menu__item:last-child a {
+    background: black;
+}
+
+.menu__item a:empty {
+    background: green;
+}
+
+.menu__item a:not(.menu__link) {
+    border-color: red;
+}
+
+.menu__item a:hover {
+    background: #e96acd;
+    color: white;
+}
+
+
+
+.imagenPrincipal {
+    height: 80vh;
+    background-image: url("../img/paisaje.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-inline: 200px;
+}
+
+
+/********** Pseudoelementos ***********/
+.imagenPrincipal h2 {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.596);
+    padding-inline: 15px;
+}
+
+.imagenPrincipal h2::first-letter {
+    color: #e96acd;
+}
+
+.imagenPrincipal h2::selection {
+    background: #e96acd;
+    color: black;
+}
+
+.imagenPrincipal p {
+    color: white;
+    text-align: center;
+}
+
+.imagenPrincipal p::first-line {
+    color: #e96acd;
+}
+
+.imagenPrincipal p::selection {
+    background: black;
+    color: #e96acd;
+}
+
+
+
+.tarjetitas {
+    padding: 60px;
+    display: flex;
+    gap: 30px;
+}
+
+.tarjetita {
+    background-color: #e96acd;
+    border-radius: 30px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+.informacion {
+    padding: 0 20px 20px 20px;
+}
+
+.tarjetita__imagen {
+    max-width: 100%;
+}
+
+.pie {
+    background-color: #e96acd;
+    color: white;
+    padding-block: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.tarjetitados {
+    flex: 1.5;
+}

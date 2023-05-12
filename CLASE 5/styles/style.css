@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+header {
+    background-color: rgb(255, 47, 47);
+    display:flex ;
+    gap: 20px;
+    grid-gap: 20px;
+   
+}
+.logo {
+    width: 100PX;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+}
+.menu {
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+    grid-gap: 10px;
+    
+}
+
+.menu__item a {
+    background: rgb(15, 15, 15);
+    border: 3px solid rgb(162, 255, 190);
+    color: #ffffff;
+    text-decoration: none;
+    width: 100PX;
+}
+.menu__item a:hover{
+    background: rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    text-decoration: underline double;
+}
+.menu__item:nth-child(1) a {
+    background: #fffffd;
+    border: 3px solid #095e1e;
+    color: rgb(0, 0, 0);
+    text-decoration: underline double;
+}
+
+
+.imagenPrincipal {
+    height: 50vh;
+    background-image: url("../img/im_principal.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-inline: 200px;
+    width: 1000px;
+    height: 300px;
+    margin-left: 200px
+}
+
+.imagenPrincipal h2 {
+    color: white;
+    background-color: black;
+    padding-inline: 15px;
+}
+
+.imagenPrincipal p {
+    color: red;
+    background-color: black;
+    text-align: center;
+}
+
+.tarjetitas {
+    padding: 60px;
+    display: flex;
+    gap: 30px;
+}
+
+.tarjetita {
+    background-color: #4b2ece;
+    border-radius: 30px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+.informacion {
+    padding: 0 20px 20px 20px;
+}
+
+.tarjetita__imagen {
+    max-width: 100%;
+    
+}
+
+.pie {
+    background-color: greenyellow;
+    color: rgba(62, 22, 205, 0.746);
+    padding-block: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.tarjetita__boton{
+    color: yellow;
+    background-color: black;
+}
